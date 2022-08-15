@@ -45,10 +45,14 @@ function move(element) {
         if(e.key === 'ArrowDown'){
             direction = 'south'
         }
+        callback(direction)
     })
+    
     document.addEventListener('keyup', function(e){
         direction = null
+        callback(direction)
     })
+    
 
     
 
